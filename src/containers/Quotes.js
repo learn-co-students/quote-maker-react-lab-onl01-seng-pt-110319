@@ -5,18 +5,18 @@ import { removeQuote, upvoteQuote, downvoteQuote } from '../actions/quotes';
 
 class Quotes extends Component {
 
-  handleUpvote = (e, quoteId) => {
-    e.preventDefault()
+  handleUpvote = (event, quoteId) => {
+    event.preventDefault()
     this.props.dispatch(upvoteQuote(quoteId));
   }
 
-  handleDownvote = (e, quoteId) => {
-    e.preventDefault()
+  handleDownvote = (event, quoteId) => {
+    event.preventDefault()
     this.props.dispatch(downvoteQuote(quoteId));
   }
 
-  handleRemoveQuote = (e, quoteId) => {
-    e.preventDefault()
+  handleRemoveQuote = (event, quoteId) => {
+    event.preventDefault()
     this.props.dispatch(removeQuote(quoteId));
   }
 
