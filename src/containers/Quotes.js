@@ -35,9 +35,9 @@ class Quotes extends Component {
                 <QuoteCard
                   key={quote.id}
                   quote={quote}
-                  upvoteQuote={e => this.handleUpvote(event, quote.id)}
-                  downvoteQuote={e => this.handleDownvote(event, quote.id)}
-                  removeQuote={e => this.handleRemoveQuote(event, quote.id)}
+                  upvoteQuote={event => this.handleUpvote(event, quote.id)}
+                  downvoteQuote={event => this.handleDownvote(event, quote.id)}
+                  removeQuote={event => this.handleRemoveQuote(event, quote.id)}
                 />
                 )}
             </div>
